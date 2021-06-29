@@ -122,4 +122,5 @@ solid
 true
 true
 
+// might have to enter after last input to enter amount of names to remove and the names are case sensitive.
  */
