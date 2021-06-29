@@ -1,4 +1,4 @@
-package java;
+package dayCare;
 
 public class Dog extends Animal {
 

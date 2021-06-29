@@ -1,4 +1,4 @@
-package java;
+package dayCare;
 
 public class Cat extends Animal {
 
