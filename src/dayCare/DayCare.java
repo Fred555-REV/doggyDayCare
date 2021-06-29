@@ -13,8 +13,12 @@ public class DayCare {
         }
     }
 
-    public static void removeAnimal() {
-
+    public static void removeAnimal(List<Animal> animalList, String nameToRemove) {
+        for (Animal animal : animalList) {
+            if (animal.name.equalsIgnoreCase(nameToRemove)) {
+                animalList.remove(animal);
+            }
+        }
     }
 }
 

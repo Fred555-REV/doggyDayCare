@@ -56,5 +56,29 @@ public class Main {
             scan.nextLine();
             DayCare.addAnimal(new Cat(size, isFixed, name, hairColor, pattern, wasStray, isInsideCat), animalList);
         }
+
+        DayCare.displayAnimals(animalList);
+
+        System.out.println("Enter amount of names to remove: ");
+        int namesToRemove = scan.nextInt();
+        scan.nextLine();
+        for (int i = 0; i < namesToRemove; i++) {
+            System.out.println("Enter name to remove: ");
+            String nameToRemove = scan.nextLine();
+            DayCare.removeAnimal(animalList, nameToRemove);
+        }
+
+        DayCare.displayAnimals(animalList);
     }
 }
+
+/*
+
+
+
+
+
+
+
+
+ */
