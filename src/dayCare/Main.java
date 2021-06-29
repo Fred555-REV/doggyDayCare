@@ -14,14 +14,21 @@ public class Main {
         scan.nextLine();
 
         for (int i = 0; i < dogAmount; i++) {
+            System.out.println("Enter name: ");
+            String name = scan.nextLine();
+            System.out.println("Enter hair color: ");
+            String hairColor = scan.nextLine();
+            System.out.println("Enter size: tiny/small/medium/large/huge");
             String size = scan.nextLine();
+            System.out.println("Enter if fixed: true/false");
             Boolean isFixed = scan.nextBoolean();
             scan.nextLine();
-            String name = scan.nextLine();
-            String hairColor = scan.nextLine();
+            System.out.println("Enter breed: ");
             String breed = scan.nextLine();
+            System.out.println("Enter snout length in inches: ");
             int snoutLength = scan.nextInt();
             scan.nextLine();
+            System.out.println("Enter diet: canned/dry/wet/raw/home_cooked");
             String diet = scan.nextLine();
             DayCare.addAnimal(new Dog(size, isFixed, name, hairColor, breed, snoutLength, diet), animalList);
         }
@@ -31,13 +38,20 @@ public class Main {
         scan.nextLine();
 
         for (int i = 0; i < catAmount; i++) {
+            System.out.println("Enter name: ");
+            String name = scan.nextLine();
+            System.out.println("Enter hair color: ");
+            String hairColor = scan.nextLine();
+            System.out.println("Enter size: tiny/small/medium/large/huge");
             String size = scan.nextLine();
+            System.out.println("Enter if fixed: true/false ");
             Boolean isFixed = scan.nextBoolean();
             scan.nextLine();
-            String name = scan.nextLine();
-            String hairColor = scan.nextLine();
+            System.out.println("Enter pattern: ");
             String pattern = scan.nextLine();
+            System.out.println("Enter if cat was stray: true/false");
             Boolean wasStray = scan.nextBoolean();
+            System.out.println("enter if cat is an indoor car: true/false");
             Boolean isInsideCat = scan.nextBoolean();
             scan.nextLine();
             DayCare.addAnimal(new Cat(size, isFixed, name, hairColor, pattern, wasStray, isInsideCat), animalList);

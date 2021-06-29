@@ -8,7 +8,9 @@ public class DayCare {
     }
 
     public static void displayAnimals(List<Animal> animalList) {
-
+        for (Animal animal : animalList) {
+            System.out.println(animal);
+        }
     }
 
     public static void removeAnimal() {
