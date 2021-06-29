@@ -74,6 +74,8 @@ public class Main {
 }
 
 /*
+inputs to simplify testing
+premade 3 dogs and 3 cats
 
 3
 Dogmeat
@@ -101,22 +103,22 @@ wet
 Cat
 color1
 HUGE
-true
+false
 striped
 true
 false
-STRAY
-dirt
+strayCat
+dirt-color
 tiny
 true
 dotted
 true
 true
 notaCAT
-none
-none
+dog-sized
+green
 true
-none
+solid
 true
 true
 
