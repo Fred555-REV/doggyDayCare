@@ -7,7 +7,7 @@ public class DayCare {
         animalList.add(animal);
     }
 
-    public static void displayAnimals() {
+    public static void displayAnimals(List<Animal> animalList) {
 
     }
 
