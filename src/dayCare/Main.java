@@ -68,8 +68,8 @@ public class Main {
             String nameToRemove = scan.nextLine();
             DayCare.removeAnimal(animalList, nameToRemove);
         }
-
         DayCare.displayAnimals(animalList);
+        scan.close();
     }
 }
 
