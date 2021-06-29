@@ -59,14 +59,20 @@ public class Main {
 
         DayCare.displayAnimals(animalList);
 
-        System.out.println("Enter amount of names to remove: ");
+        System.out.println("Enter amount of animals to remove: ");
         int namesToRemove = scan.nextInt();
         scan.nextLine();
+//        for (int i = 0; i < namesToRemove; i++) {
+//            DayCare.displayNames(animalList);
+//            System.out.println("Enter name to remove: ");
+//            String nameToRemove = scan.nextLine();
+//            DayCare.removeAnimal(animalList, nameToRemove);
+//        }
         for (int i = 0; i < namesToRemove; i++) {
             DayCare.displayNames(animalList);
-            System.out.println("Enter name to remove: ");
-            String nameToRemove = scan.nextLine();
-            DayCare.removeAnimal(animalList, nameToRemove);
+            System.out.println("Enter index number to remove: ");
+            int index = scan.nextInt();
+            DayCare.removeAnimal(animalList, index);
         }
         DayCare.displayAnimals(animalList);
         scan.close();
@@ -100,21 +106,21 @@ pug
 1
 wet
 3
-Cat
-color1
+Bob
+black and white
 HUGE
 false
 striped
 true
 false
-strayCat
+Stray
 dirt-color
 tiny
 true
 dotted
 true
 true
-notaCAT
+notACat
 dog-sized
 green
 true
