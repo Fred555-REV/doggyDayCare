@@ -121,8 +121,8 @@ dotted
 true
 true
 notACat
-dog-sized
 green
+dog-sized
 true
 solid
 true

@@ -32,7 +32,7 @@ public class DayCare {
 
     public static void displayNames(List<Animal> animalList) {
         for (int i = 0; i < animalList.size(); i++) {
-            System.out.println("name = " + animalList.get(i).name + " hair = " + animalList.get(i).hairColor + " index = " + i);
+            System.out.println("name: " + animalList.get(i).name + ", hair color: " + animalList.get(i).hairColor + ", size: " + animalList.get(i).size + "\nindex: " + i);
         }
     }
 }
