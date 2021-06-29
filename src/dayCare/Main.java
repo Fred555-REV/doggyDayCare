@@ -88,14 +88,14 @@ white
 tiny
 true
 chihuahua
-1
+2
 home_cooked
 Barker
 black
 medium
 true
 pug
-0
+1
 wet
 3
 Cat
