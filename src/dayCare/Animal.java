@@ -18,4 +18,8 @@ public class Animal {
     public String speak() {
         return "---";
     }
+
+    public String toString() {
+        return String.format("{ name: %s, size: %s, hairColor: %s,  isFixed: %s}", name, size,  hairColor, isFixed);
+    }
 }
