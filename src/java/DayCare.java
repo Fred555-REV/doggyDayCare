@@ -10,6 +10,10 @@ public class DayCare {
     public static void displayAnimals() {
 
     }
+
+    public static void removeAnimal() {
+
+    }
 }
 
 /*

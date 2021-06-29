@@ -2,14 +2,13 @@ package java;
 
 public class Animal {
 
-    public int legs;
+    public int legs = 4;
     public String size;//   tiny/small/medium/large/huge
-    public boolean isFixed;
+    public Boolean isFixed;
     public String name;
     public String hairColor;
 
-    public Animal(int legs, String size, boolean isFixed, String name, String hairColor) {
-        this.legs = legs;
+    public Animal(String size, Boolean isFixed, String name, String hairColor) {
         this.size = size;
         this.isFixed = isFixed;
         this.name = name;
