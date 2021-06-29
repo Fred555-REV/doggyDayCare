@@ -3,8 +3,8 @@ package java;
 import java.util.List;
 
 public class DayCare {
-    public static void addAnimal(Animal animal, List list) {
-
+    public static void addAnimal(Animal animal, List<Animal> animalList) {
+        animalList.add(animal);
     }
 
     public static void displayAnimals() {

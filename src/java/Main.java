@@ -6,11 +6,10 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        List<Animal> animalList = new ArrayList<Animal>();
+        List<Animal> animalList = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter amount of Dogs: ");
-
         int dogAmount = scan.nextInt();
         scan.nextLine();
 
@@ -28,7 +27,6 @@ public class Main {
         }
 
         System.out.println("Enter amount of Cats: ");
-
         int catAmount = scan.nextInt();
         scan.nextLine();
 
