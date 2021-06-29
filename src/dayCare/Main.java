@@ -106,14 +106,14 @@ pug
 1
 wet
 3
-Bob
+Cat
 black and white
 HUGE
 false
 striped
 true
 false
-Stray
+Cat
 dirt-color
 tiny
 true
@@ -129,4 +129,6 @@ true
 true
 
 // might have to enter after last input to enter amount of names to remove and the names are case sensitive.
+// both removal by name and by index works but name only removes first so I made a way to make it work
+// for duplicate names like you said in class
  */

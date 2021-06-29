@@ -9,10 +9,10 @@ public class DayCare {
 
     public static void displayAnimals(List<Animal> animalList) {
         for (Animal animal : animalList) {
-            if (animal.getClass().getSimpleName().equalsIgnoreCase("dog")){
-                System.out.println("Dog :" + animal + "\n" + animal.speak());
+            if (animal.getClass().getSimpleName().equalsIgnoreCase("dog")) {
+                System.out.println("\nDog :" + animal + "\n " + animal.name + " says " + animal.speak());
             } else {
-                System.out.println("Cat :" + animal + "\n" + animal.speak());
+                System.out.println("\nCat :" + animal + "\n " + animal.name + " says " + animal.speak());
             }
 
         }
@@ -25,13 +25,14 @@ public class DayCare {
             }
         }
     }
+
     public static void removeAnimal(List<Animal> animalList, int indexToRemove) {
-                animalList.remove(indexToRemove);
+        animalList.remove(indexToRemove);
     }
 
     public static void displayNames(List<Animal> animalList) {
         for (int i = 0; i < animalList.size(); i++) {
-            System.out.println(animalList.get(i).name + "index = " +i);
+            System.out.println("name = " + animalList.get(i).name + " hair = " + animalList.get(i).hairColor + " index = " + i);
         }
     }
 }
