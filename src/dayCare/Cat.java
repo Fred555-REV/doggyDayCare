@@ -16,4 +16,8 @@ public class Cat extends Animal {
     public String speak() {
         return "MOW";
     }
+
+    public String toString() {
+        return String.format("{ size: %s, isFixed: %s, name: %s, hairColor: %s, pattern: %s, wasStray: %s, isInsideCat: %s}", size, isFixed, name, hairColor, pattern, wasStray, isInsideCat);
+    }
 }
