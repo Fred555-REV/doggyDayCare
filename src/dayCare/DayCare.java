@@ -10,9 +10,9 @@ public class DayCare {
     public static void displayAnimals(List<Animal> animalList) {
         for (Animal animal : animalList) {
             if (animal.getClass().getSimpleName().equalsIgnoreCase("dog")) {
-                System.out.println("\nDog :" + animal + "\n " + animal.name + " says " + animal.speak());
+                System.out.println("\nDog : " + animal.name + " says " + animal.speak() + "\n" +animal);
             } else {
-                System.out.println("\nCat :" + animal + "\n " + animal.name + " says " + animal.speak());
+                System.out.println("\nCat : " + animal.name + " says " + animal.speak() + "\n" +animal);
             }
 
         }
