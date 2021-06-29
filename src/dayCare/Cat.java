@@ -14,7 +14,7 @@ public class Cat extends Animal {
     }
 
     public String speak() {
-        return "MOW";
+        return "AYBABTU";
     }
 
     public String toString() {

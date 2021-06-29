@@ -15,7 +15,7 @@ public class Dog extends Animal {
 
 
     public String speak() {
-        return "AYBABTU";
+        return "BORK";
     }
 
     public String toString() {
