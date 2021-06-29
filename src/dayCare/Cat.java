@@ -18,6 +18,6 @@ public class Cat extends Animal {
     }
 
     public String toString() {
-        return String.format("{ size: %s, isFixed: %s, name: %s, hairColor: %s, pattern: %s, wasStray: %s, isInsideCat: %s}", size, isFixed, name, hairColor, pattern, wasStray, isInsideCat);
+        return String.format("{ name: %s, size: %s, hairColor: %s, isFixed: %s, pattern: %s, wasStray: %s, isInsideCat: %s }", name, size,  hairColor, isFixed, pattern, wasStray, isInsideCat);
     }
 }

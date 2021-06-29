@@ -63,6 +63,7 @@ public class Main {
         int namesToRemove = scan.nextInt();
         scan.nextLine();
         for (int i = 0; i < namesToRemove; i++) {
+            DayCare.displayNames(animalList);
             System.out.println("Enter name to remove: ");
             String nameToRemove = scan.nextLine();
             DayCare.removeAnimal(animalList, nameToRemove);
@@ -74,11 +75,49 @@ public class Main {
 
 /*
 
-
-
-
-
-
-
+3
+Dogmeat
+black
+large
+false
+german shepard
+5
+raw
+Charles
+white
+tiny
+true
+chihuahua
+1
+home_cooked
+Barker
+black
+medium
+true
+pug
+0
+wet
+3
+Cat
+color1
+HUGE
+true
+striped
+true
+false
+STRAY
+dirt
+tiny
+true
+dotted
+true
+true
+notaCAT
+none
+none
+true
+none
+true
+true
 
  */

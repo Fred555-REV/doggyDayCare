@@ -14,10 +14,16 @@ public class DayCare {
     }
 
     public static void removeAnimal(List<Animal> animalList, String nameToRemove) {
-        for (Animal animal : animalList) {
-            if (animal.name.equalsIgnoreCase(nameToRemove)) {
-                animalList.remove(animal);
+        for (int i = 0; i < animalList.size(); i++) {
+            if (animalList.get(i).name.equals(nameToRemove)) {
+                animalList.remove(i);
             }
+        }
+    }
+
+    public static void displayNames(List<Animal> animalList) {
+        for (Animal animal : animalList) {
+            System.out.println(animal.name);
         }
     }
 }

@@ -19,6 +19,6 @@ public class Dog extends Animal {
     }
 
     public String toString() {
-        return String.format("{ size: %s, isFixed: %s, name: %s, hairColor: %s, breed: %s, snoutLength: %s inches, diet: %s}", size, isFixed, name, hairColor, breed, snoutLength, diet);
+        return String.format("{ name: %s, size: %s, hairColor: %s,  isFixed: %s, breed: %s, snoutLength: %s inches, diet: %s }", name, size,  hairColor, isFixed, breed, snoutLength, diet);
     }
 }
