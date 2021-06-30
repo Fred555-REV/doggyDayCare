@@ -30,7 +30,16 @@ public class Main {
             scan.nextLine();
             System.out.println("Enter diet: canned/dry/wet/raw/home_cooked");
             String diet = scan.nextLine();
-            DayCare.addAnimal(new Dog(size, isFixed, name, hairColor, breed, snoutLength, diet), animalList);
+            System.out.println("Does dog make a noise?: true/false ");
+            if (scan.nextBoolean()) {
+                scan.nextLine();
+                System.out.println("Enter noise:");
+                String noise = scan.nextLine();
+                DayCare.addAnimal(new Dog(size, isFixed, name, hairColor, breed, snoutLength, diet, noise), animalList);
+            } else {
+                scan.nextLine();
+                DayCare.addAnimal(new Dog(size, isFixed, name, hairColor, breed, snoutLength, diet), animalList);
+            }
         }
 
         System.out.println("Enter amount of Cats: ");
@@ -54,7 +63,16 @@ public class Main {
             System.out.println("enter if cat is an indoor car: true/false");
             Boolean isInsideCat = scan.nextBoolean();
             scan.nextLine();
-            DayCare.addAnimal(new Cat(size, isFixed, name, hairColor, pattern, wasStray, isInsideCat), animalList);
+            System.out.println("Does cat make a noise?: true/false ");
+            if (scan.nextBoolean()) {
+                scan.nextLine();
+                System.out.println("Enter noise:");
+                String noise = scan.nextLine();
+                DayCare.addAnimal(new Cat(size, isFixed, name, hairColor, pattern, wasStray, isInsideCat, noise), animalList);
+            } else {
+                scan.nextLine();
+                DayCare.addAnimal(new Cat(size, isFixed, name, hairColor, pattern, wasStray, isInsideCat), animalList);
+            }
         }
 
         DayCare.displayAnimals(animalList);
@@ -91,6 +109,8 @@ false
 german shepard
 5
 raw
+true
+BORK
 Charles
 white
 tiny
@@ -98,6 +118,8 @@ true
 chihuahua
 2
 home_cooked
+true
+yip
 Barker
 black
 medium
@@ -105,6 +127,8 @@ true
 pug
 1
 wet
+true
+BARK
 3
 Cat
 black and white
@@ -113,6 +137,7 @@ false
 striped
 true
 false
+false
 Cat
 dirt-color
 tiny
@@ -120,6 +145,8 @@ true
 dotted
 true
 true
+true
+mew
 notACat
 green
 dog-sized
@@ -127,6 +154,8 @@ true
 solid
 true
 true
+true
+woof
 
 // might have to enter after last input to enter amount of names to remove and the names are case sensitive.
 // both removal by name and by index works but name only removes first so I made a way to make it work
